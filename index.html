@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Domeo</title>
+</head>
+
+<body>
+    <div class="zatemnenieDiv" id="zatemnenie">
+        <div class="pop-ap" id="okno">
+            <a href="#!"><img src="./assets/img/krestikPop-ap.jpg" class="krestik" alt="close"></a>
+            <p class="pop-apTitle">РАССЧИТАЙТЕ СТОИМОСТЬ <br> <b>МЕХАНИЗИРОВАННОЙ ШТУКАТУРКИ</b><br> ОТПРАВИВ ФОРМУ</p>
+            <p class="pop-apSubTitle">Зададим 5 ключевых вопросов, после которых <br>озвучим стоимость Вашего ремонта
+            </p>
+            <div class="inputBtn">
+                <div class="text-field">
+                    <p class="phoneText"></p><input class="text-field__input" type="text" name="login" id="login"
+                        placeholder="+7 (___) ___-__-__"></p>
+                </div>
+                <a href="#!" class="close" id="getOrder">Рассчитать стоимость</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="orderPop-ap">
+        <div data-aos="fade-up" class="pop-ap" id="okno">
+            <a href="#!"><img src="./assets/img/krestikPop-ap.jpg" class="krestik" alt="close"></a>
+            <p class="pop-apTitle"><b> ОТПРАВЬТЕ ФОРМУ, ЧТОБЫ ЗАКАЗАТЬ<br>РЕМОНТНЫЕ РАБОТЫ В DOMEO</b></p>
+            <p class="pop-apSubTitle">Стяжка, штукатурка, шпатклевка под ключ
+                <br>с гарантией идеальных поверхностей
+            </p>
+            <div class="inputBtn">
+                <div class="text-field">
+                    <p class="phoneText"></p><input class="text-field__input" type="text" name="login" id="login"
+                        placeholder="+7 (___) ___-__-__"></p>
+                </div>
+                <a href="#!" class="close" id="getOrder">ЗАКАЗАТЬ РЕМОНТНЫЕ РАБОТЫ</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="callMePop-ap">
+        <div data-aos="fade-up" class="pop-ap" id="okno">
+            <a href="#!"><img src="./assets/img/krestikPop-ap.jpg" class="krestik" alt="close"></a>
+            <p class="pop-apTitle"><b>ЗАКАЖИТЕ ОБРАТНЫЙ ЗВОНОК<br>ОТПРАВИВ КОНТАКТНУЮ ФОРМУ</b></p>
+            <p class="pop-apSubTitle">Перезвоним, через 5-10 минут</p>
+            <div class="inputBtn">
+                <div class="text-field">
+                    <p class="phoneText"></p><input class="text-field__input" type="text" name="login" id="login"
+                        placeholder="+7 (___) ___-__-__"></p>
+                </div>
+                <a href="#!" class="close" id="getOrder">ЗАКАЗАТЬ ЗВОНОК</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="headerSS">
+        <div class="wrapper">
+            <header class="header" id="top">
+                <img src="./assets/img/logo.svg" alt="Logotipe" class="logo">
+                <div class="header__info">
+                    <img src="./assets/img/location.svg" alt="location" class="header__icon">
+                    <div class="header__infoMiniTexts">
+                        <p class="header__infoText">Офис компании:</p>
+                        <a href="#contact" class="header__infoTextL">г. Москва, Лужнецкая наб. 2/4 стр. 17</a>
+                    </div>
+                </div>
+                <div class="header__info">
+                    <img src="./assets/img/paperList.svg" alt="location" class="header__icon">
+                    <div class="header__infoMiniTexts">
+                        <p class="header__infoText">Заказать смету:</p>
+                        <a href="#cost" class="header__infoTextL">Вызвать замерщика на объект</a>
+                    </div>
+                </div>
+                <a href="#" class="header__contact">
+                    <span class="header__infoTextLW">Связаться в&nbsp;WhatsApp</span>
+                    <img src="./assets/img/whatsup.svg" alt="Contact" class="whatsup">
+                </a>
+
+                <div class="contactUs">
+                    <div class="raspisanie">
+                        <div class="doth"></div>
+                        <p class="shudue">ПН-ВС с 9:00 до 22:00</p>
+                    </div>
+                    <p class="phoneNumber">+7(495) 126-24-89</p>
+                </div>
+            </header>
+            <div class="headerUnderLine"></div>
+
+
+        </div>
+    </div>
+    <div class="blocks">
+        <div class="novigationList">
+            <nav class="list">
+                <li> <a class="listNov" href="#cost">Стоимость</a> </li>
+                <li> <a class="listNov" href="#uslovie">Условия</a> </li>
+                <li> <a class="listNov" href="#garant">Гарантии</a> </li>
+                <li> <a class="listNov" href="#cost">Расчет стоимости</a> </li>
+                <li> <a class="listNov" href="#cost">Замер</a> </li>
+                <li> <a class="listNov" href="#contact">Контакты</a> </li>
+            </nav>
+        </div>
+
+
+        <div id="uslovie" class="block1">
+            <h1 class="block1__title">Механизированная</h1>
+            <h2 class="block1__subtitle">штукатурка / шпаклевка / стяжка </h2>
+            <p class="block1__underSubTitle"><b class="b500">Получите идеально ровные стены и пол</b> без образований
+                трещин<br> <b class="b500">до 4х раз быстрее и дешевле</b> по сравнению с ручной работой</p>
+            <p class="block1__underSubTitle2"><i>За счет использования механизированных станций:</i></p>
+            <div class="block_profits">
+                <div class="block1__profitList">
+                    <img class="block1__profitImg" src="./assets/img/profit1.svg" alt="Без предоплат">
+                    <p class="block1__profitText"><b>От 300₽/м²</b><br>Без предоплат</p>
+                </div>
+                <div class="block1__profitList">
+                    <img class="block1__profitImg" src="./assets/img/profit2.svg" alt="Без предоплат">
+                    <p class="block1__profitText"><b>До 560м²</b><br>В сутки</p>
+                </div>
+                <div class="block1__profitList">
+                    <img class="block1__profitImg" src="./assets/img/profit3.svg" alt="Без предоплат">
+                    <p class="block1__profitText"><b>30% скидка</b><br>на смеси</p>
+                </div>
+                <div class="block1__profitList">
+                    <img class="block1__profitImg" src="./assets/img/profit4.svg" alt="Без предоплат">
+                    <p class="block1__profitText"><b>Без усадки</b><br>и трещин</p>
+                </div>
+            </div>
+            <div class="block1__priceList">
+                <img src="./assets/img/priceList.svg" class="listImg" alt="priceList">
+                <p class="block1__priceListText">Скачайте прайс-лист с актуальными<br>ценами на работу в 1 клик</p>
+            </div>
+            <a href="./assets/priceList.docx" class="sliderBtm">
+                <div class="knopka">
+                    <img src="./assets/img/btmL.svg" alt="left">
+                    <p class="btmText">СКАЧАТЬ ПРАЙС-ЛИСТ</p>
+                    <img src="./assets/img/btmR.svg" alt="right">
+                </div>
+            </a>
+        </div>
+
+
+        <div id="cost" class="block2">
+            <h1 class="block2__title">Работаем со всеми фасадными и внутрестеновыми<br>поверхностями под любой вид
+                финишной отделки</h1>
+
+            <div class="subTitleBlock">
+                <img src="./assets/img/plantL.svg" alt="paperL" class="paperLW">
+                <p class="block2__subTitle">Ровная поверхность без трещин <b>с гарантией 3 года</b></p>
+                <img src="./assets/img/plantR.svg" alt="paperR" class="paperLW">
+            </div>
+            <div class="card_list">
+                <div data-aos="fade-down" class="firstCard cards2">
+                    <p class="miniBlockTitle">Механизированная<br><b>штукатурка:</b></p>
+                    <div class="sqBlock">
+                        <p class="miniBlockSubTitle">от 350₽/м²</p>
+                    </div>
+                    <a href="#zatemnenie" class="sliderBtm card_cost-calc">
+                        <p class="b2costCalcText">РАССЧИТАТЬ СТОИМОСТЬ</p>
+                    </a>
+                </div>
+                <div data-aos="fade-down" class="secondCard cards2">
+                    <p class="miniBlockTitle">Механизированная<br><b>стяжка пола:</b></p>
+                    <div class="sqBlock">
+                        <p class="miniBlockSubTitle">от 300₽/м²</p>
+                    </div>
+                    <a href="#zatemnenie" class="sliderBtm card_cost-calc">
+                        <p class="b2costCalcText">РАССЧИТАТЬ СТОИМОСТЬ</p>
+                    </a>
+                </div>
+                <div data-aos="fade-down" class="thirdCard cards2">
+                    <p class="miniBlockTitle">Механизированная<br><b>шпатлёвка:</b></p>
+                    <div class="sqBlock">
+                        <p class="miniBlockSubTitle">от 330₽/м²</p>
+                    </div>
+                    <a href="#zatemnenie" class="sliderBtm card_cost-calc">
+                        <p class="b2costCalcText">РАССЧИТАТЬ СТОИМОСТЬ</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block3">
+            <h1 class="block2__title">За 11 лет работы отштукатурили<br>более 1500 объектов Москвы</h1>
+            <div class="subTitleBlock">
+                <img src="./assets/img/plantL.svg" alt="paperL" class="paperLW">
+                <p class="block2__subTitle">Готовы выйти на ваш объект уже сегодня</b></p>
+                <img src="./assets/img/plantR.svg" alt="paperR" class="paperLW">
+            </div>
+
+            <div class="benefits__list">
+                <div data-aos="fade-right" class="benefit_blocks bb1">
+                    <p class="benefits__miniTitle"><b>Прозрачная смета</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Без предоплаты за материал</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Оплата после приемки работ</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Скидка на ремонт в Domeo</p>
+                </div>
+                <div data-aos="fade-left" class="benefit_blocks bb2">
+                    <p class="benefits__miniTitle"><b>Допуск до 0,3 мм</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Импортные машины стоимостью<br> от 760 т. р.</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Соблюдение требований СНиП</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Мастера с реальным опытом от 6 лет</p>
+                </div>
+                <div data-aos="fade-right" class="benefit_blocks bb3">
+                    <p class="benefits__miniTitle"><b>За сутки до 760м²</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">В 4 раза быстрее ручной работы</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">До 12 мастеров и 4 машин на объект</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Безошибочный план работ</p>
+                </div>
+                <div data-aos="fade-left" class="benefit_blocks bb4">
+                    <p class="benefits__miniTitle"><b>Гарантия 3 года</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Исправим любые дефекты за свой<br>счет, которые возникли после сдачи<br>объекта
+                    </p>
+                </div>
+                <div data-aos="fade-right" class="benefit_blocks bb5">
+                    <p class="benefits__miniTitle"><b>Сроки по договору</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Фиксируем все сроки в договоре
+                        <br>и выплачиваем до 20.000 ₽
+                        <br>за каждый день просрочкиA
+                    </p>
+                </div>
+                <div data-aos="fade-left" class="benefit_blocks bb6">
+                    <p class="benefits__miniTitle"><b>Скидки на материал</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Оптовая цена на сухие смеси</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Рассчитаем и подберем материал</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Сами закупим и доставим на объект</p>
+                </div>
+                <div data-aos="fade-right" class="benefit_blocks bb7">
+                    <p class="benefits__miniTitle"><b>Экологичность</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Можно использовать в спальнях и детских комнатах</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Паропроницаемость создаёт защиту от возникновения микроорганизмов</p>
+                </div>
+                <div data-aos="fade-left" class="benefit_blocks bb8">
+                    <p class="benefits__miniTitle"><b>Без трещин</b></p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Плотное заполнение смеси без пустот</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Приборный контроль смеси</p>
+                    <p class="benefits__miniSubTitle"><img class="imgLitleStar" src="./assets/img/littlestar.svg"
+                            alt="star">Дефектовка поверхности</p>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="slider">
+            <p class="block2__title">Гарантируем идеально ровную поверхность без трещин</p>
+            <div class="subTitleBlock sliderTitleMargin">
+                <img src="./assets/img/plantL.svg" alt="paperL" class="paperLW">
+                <p class="block2__subTitle">Ровная поверхность без трещин <b>с гарантией 3 года</b></p>
+                <img src="./assets/img/plantR.svg" alt="paperR" class="paperLW">
+            </div>
+
+            <div id="new-product" class="sliderDiv swiper">
+                <div class="swiper-wrapper">
+                    <div class="sliderBlock swiper-slide">
+                        <img src="./assets/img/sliderStationOrange.jpg" alt="Stukatur Station" class="sliderImg">
+                        <div class="sliderTextBlock">
+                            <p class="sliderTextBlockTitle"><b>Штукатурная станция</b></p>
+                            <a href="#!" class="sliderLink"><b>PFT G4X smart с насосом AV1000</b></a>
+                            <p class="sliderReasonText width5b">В этой штукатурной станции PFT G4 Smart установлен
+                                повышающий водяной насос, что даёт преимущество на объектах, где давление воды меньше
+                                2,2
+                                Bar.</p>
+                            <div class="sliderBenefit">
+                                <div class="leftBenefit mainBenefit">
+                                    <p class="sliderMiniTitle"><b>Штукатурные работы</b></p>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">гипсовые штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементные штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">известково-гипсовые;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">известковые штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">декоративные штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">теплоизоляционные штукатурки.</p>
+                                    </div>
+                                </div>
+                                <div class="rightBenefit mainBenefit">
+                                    <p class="sliderMiniTitle"><b>Штукатурные работы</b></p>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">гипсовые самовыравнивающиеся полы;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементные полы;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементно-полимерные полы.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#orderPop-ap" class="sliderBtm">
+                                <p class="sliderBtmText">ЗАЯВКА НА РАБОТУ</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sliderBlock swiper-slide">
+                        <img src="./assets/img/sliderStation.jpg" alt="Stukatur Station" class="sliderImg">
+                        <div class="sliderTextBlock">
+                            <p class="sliderTextBlockTitle"><b>Штукатурная станция</b></p>
+                            <a href="#!" class="sliderLink"><b>Mono-mix-ll-SC</b></a>
+                            <p class="sliderReasonText width5b">Цель создания штукатурной станции mono-mix-II-SC это
+                                получение универсальной, компактной и одновременно мощной штукатурной станции, которую
+                                можно
+                                включить в бытовую розетку (220 Вольт, 16 А).</p>
+                            <div class="sliderBenefit">
+                                <div class="leftBenefit mainBenefit">
+                                    <p class="sliderMiniTitle"><b>Штукатурные работы</b></p>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">гипсовые штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементные штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">известково-гипсовые;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">известковые штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">декоративные штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">теплоизоляционные штукатурки.</p>
+                                    </div>
+                                </div>
+                                <div class="rightBenefit mainBenefit">
+                                    <p class="sliderMiniTitle"><b>Стяжка</b></p>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">гипсовые самовыравнивающиеся полы;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементные полы;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементно-полимерные полы.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#orderPop-ap" class="sliderBtm">
+                                <p class="sliderBtmText">ЗАЯВКА НА РАБОТУ</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="sliderBlock swiper-slide">
+                        <img src="./assets/img/sliderStationBlue.png" alt="Stukatur Station" class="sliderImg">
+                        <div class="sliderTextBlock">
+                            <p class="sliderTextBlockTitle"><b>Штукатурная станция</b></p>
+                            <a href="#!" class="sliderLink"><b>PUTZKNECHT S 48 EASY</b></a>
+                            <p class="sliderReasonText width5b">Машина может использоваться для подачи штукатурной
+                                смеси,
+                                клеевых и армирующих растворов, наливных полов. За счет применения безмаячного способа
+                                оштукатуривания, снижает расход смеси до 30% на 1 м2.</p>
+                            <div class="sliderBenefit">
+                                <div class="leftBenefit mainBenefit">
+                                    <p class="sliderMiniTitle"><b>Штукатурные работы</b></p>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">гипсовые штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементные штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">известково-гипсовые;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">известковые штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">декоративные штукатурные смеси;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">теплоизоляционные штукатурки.</p>
+                                    </div>
+                                </div>
+                                <div class="rightBenefit mainBenefit">
+                                    <p class="sliderMiniTitle"><b>Штукатурные работы</b></p>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">гипсовые самовыравнивающиеся полы;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементные полы;</p>
+                                    </div>
+                                    <div class="lbl">
+                                        <img src="./assets/img/tochka7x7.svg" alt="doth2">
+                                        <p class="leftBenefitText">цементно-полимерные полы.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#orderPop-ap" class="sliderBtm">
+                                <p class="sliderBtmText">ЗАЯВКА НА РАБОТУ</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Strelka left-->
+                <!-- <a href="#!" class="strelkaPrev">
+                    <img src="./assets/img/strelkaLeft.jpg" alt="sliderBtm">
+                </a> -->
+                <!--Strelka left-->
+
+                <!--Strelka right-->
+                <!-- <a href="#!" class="strelka strelkaNext">
+                    <img src="./assets/img/strelkaRight.jpg" alt="sliderBtm">
+                </a> -->
+                <!--Strelka right-->
+            </div>
+        </section>
+
+        <section class="orderMaterial">
+            <div data-aos="fade-up" class="orderBlock">
+                <div class="orderInsideBox">
+                    <img src="./assets/img/KnaufPic.jpg" alt="Material" class="orderImg">
+                    <div class="dryMaterial">
+                        <p class="sliderMiniTitle dryMargin"><b>Сухие смеси</b></p>
+                        <p class="sliderLink"><b>Forman, Knauf, Волма и другие</b></p>
+                        <p class="orderTextAlot">Используем сухие смеси<br>соответствующие <b>ГОСТ 31189-2015</b></p>
+                        <div class="domeoClient">
+                            <img src="./assets/img/knaufStar.svg" alt="Star" class="littleOrangeStar">
+                            <p class="domeoLittleText"><b>Оптовая цена</b> для клиентов Domeo</p>
+                        </div>
+                    </div>
+                    <div class="dryLine"></div>
+                    <div class="dryTextRight">
+                        <p class="dryTitleRight">Рассчитаем, закупим и доставим весь материал</p>
+                        <p class="drySubTitleRight">Оптовая цена на материал. Эффективность расхода<br>на 20% ниже, за
+                            счет немецкого оборудования</p>
+                        <a href="#orderPop-ap" class="sliderBtm dryBtm">
+                            <p class="sliderBtmText">ЗАКАЗАТЬ МАТЕРИАЛ ПО ОПТ. ЦЕНЕ ПОД КЛЮЧ</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="garant" class="block4">
+            <h1 class="block2__title b4t">Работаем строго по договору с выполнением
+                <br>всех письменных гарантий на 100%
+            </h1>
+            <div class="subTitleBlock">
+                <img src="./assets/img/plantL.svg" alt="paperL" class="paperLW">
+                <p class="block2__subTitle">Отвечаем собственными деньгами за идеальное качество точно в срок</p>
+                <img src="./assets/img/plantR.svg" alt="paperR" class="paperLW">
+            </div>
+            <section class="block4_Section">
+                <div class="block4__Grid">
+                    <div data-aos="fade-right" class="block__Grids">
+                        <img src="./assets/img/block4-1.jpg" alt="Всплеск" class="b4img">
+                        <div class="block4__miniText">
+                            <p class="benefits__miniTitle block4margins"><b>Не оставляем грязи</b></p>
+                            <p class="benefits__miniSubTitle width4b">Смесь подается по шлангам, поэтому мы не пачкаем
+                                подъезд, фасад здания и финишную отделку. После работы убираем, выносим мусор и остатки
+                                строительного материала</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="block__Grids">
+                        <img src="./assets/img/block4-2.svg" alt="Всплеск" class="b4img">
+                        <div class="block4__miniText">
+                            <p class="benefits__miniTitle block4margins"><b>Гарантия 3 года</b></p>
+                            <p class="benefits__miniSubTitle width4b">Исправим любые замечания, которые могут возникнуть
+                                после сдачи объекта в течение 3 лет, без каких-либо разберательств</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" class="block__Grids">
+                        <img src="./assets/img/block4-3.svg" alt="Всплеск" class="b4img">
+                        <div class="block4__miniText">
+                            <p class="benefits__miniTitle block4margins"><b>Начнем работу в день обращения</b></p>
+                            <p class="benefits__miniSubTitle width4b">Готовы начать работу после согласования объема
+                                работ, кол-ва материала и бюджетов на ремонт
+                                <br>и заключения договора
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="block__Grids">
+                        <img src="./assets/img/block4-4.svg" alt="Всплеск" class="b4img">
+                        <div class="block4__miniText">
+                            <p class="benefits__miniTitle block4margins"><b>Предоплата 0₽</b></p>
+                            <p class="benefits__miniSubTitle width4b">Оплачивайте работу, только после сдачи объекта,
+                                когда вас все будет устраивать. Предоплата за материалы тоже 0₽</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" class="block__Grids">
+                        <img src="./assets/img/block4-5.svg" alt="Всплеск" class="b4img">
+                        <div class="block4__miniText">
+                            <p class="benefits__miniTitle block4margins"><b>Соблюдаем сроки</b></p>
+                            <p class="benefits__miniSubTitle width4b">Сроки работы прописываем в договоре.
+                                За каждый день просрочки выплатим неустойку до 20.000₽. 90% объектов сдаем раньше срока
+                            </p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="block__Grids">
+                        <img src="./assets/img/block4-6.svg" alt="Всплеск" class="b4img">
+                        <div class="block4__miniText">
+                            <p class="benefits__miniTitle block4margins"><b>Фиксированная смета</b></p>
+                            <p class="benefits__miniSubTitle width4b">Фиксируем смету и не изменяем ее.
+                                Лишний материал выкупим сами, либо закупим недостающий из собственных денег</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="contact" class="office">
+            <p class="block2__title">Приезжайте в наш офис для личного знакомства</p>
+            <div class="subTitleBlock sliderTitleMargin">
+                <img src="./assets/img/plantL.svg" alt="paperL" class="paperLW">
+                <p class="block2__subTitle"><b>Познакомим с командой Domeo</b>, покажем объекты где идет ремонт</p>
+                <img src="./assets/img/plantR.svg" alt="paperR" class="paperLW">
+            </div>
+            <div class="officeInfo">
+                <div id="map-test" class="map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Acc417f6811a3a73aa5c1a2c90d5be1e1f989ccce8a7e5db0c74282b6da941b1e&amp;source=constructor"
+                        width="730" height="534" frameborder="0"></iframe>
+                </div>
+                <div class="imgOffice">
+                    <div class="officeGrid">
+                        <img src="./assets/img/office1.jpg" alt="office" class="officeImgMap">
+                        <img src="./assets/img/office2.jpg" alt="office" class="officeImgMap">
+                        <img src="./assets/img/office3.jpg" alt="office" class="officeImgMap">
+                        <img src="./assets/img/office4.jpg" alt="office" class="officeImgMap">
+                    </div>
+                    <div class="mapthing">
+                        <img src="./assets/img/callFooter.jpg" alt="telefone" class="abs">
+                        <div class="contactMe">
+                            <p class="shudue qwe">ПН-ВС с 9:00 до 22:00</p>
+                            <p class="phoneNumber">+7(495) 126-24-89</p>
+                        </div>
+                    </div>
+                    <div class="mapthing">
+                        <img src="./assets/img/locationvocrug.jpg" alt="telefone" class="abs">
+                        <div class="contactMe">
+                            <p class="shudue qwe">г. Санкт-Петербург Зеленков переулок<br> 7АЗ стр.17.
+                                Офис 308</p>
+                        </div>
+                    </div>
+                    <a href="#callMePop-ap" class="sliderBtm brkf">
+                        <p class="sliderBtmText">Заказать звонок</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="footer">
+        <div class="footerBlock">
+            <div class="lineFooter">
+                <div class="footerLogoBlock">
+                    <img src="./assets/img/logo.svg" alt="Domeo Logotipe">
+                    <div class="footerLineLogo"></div>
+                    <p class="logoText">Механизированная штукатурка, шпатклевка, стяжка в Москве</p>
+                </div>
+                <div class="btmList">
+                    <img src="./assets/img/whatsupFOoter.jpg" class="btmListImg" alt="feedback">
+                    <a href="#!" class="footerLeftMainText">Задайте вопрос<br>напрямую в Whatsapp</a>
+                </div>
+                <div class="btmList">
+                    <img src="./assets/img/kalculatorFooter.jpg" class="btmListImg" alt="feedback">
+                    <a href="#!" class="footerLeftMainText">Калькулятор стоимости</a>
+                </div>
+                <div class="btmList">
+                    <img src="./assets/img/RubleFooter.jpg" class="btmListImg" alt="feedback">
+                    <a href="#!" class="footerLeftMainText">Получить PDF прайс-лист</a>
+                </div>
+                <div class="btmList">
+                    <img src="./assets/img/callFooter.jpg" class="btmListImg" alt="feedback">
+                    <a href="#!" class="footerLeftMainText">Вызвать замерщика</a>
+                </div>
+            </div>
+            <div class="lineFooter">
+                <p class="menuList">Меню</p>
+                <a href="#!" class="footerLeftMainText otstupFooterLeft2">Главная</a>
+                <a href="#!" class="footerLeftMainText otstupFooterLeft2">Расчет стоимости</a>
+                <a href="#!" class="footerLeftMainText otstupFooterLeft2">Наши работы</a>
+                <a href="#!" class="footerLeftMainText otstupFooterLeft2">Тарифы</a>
+                <a href="#!" class="footerLeftMainText otstupFooterLeft2">Отзывы</a>
+                <a href="#!" class="footerLeftMainText otstupFooterLeft2">Контакты</a>
+            </div>
+            <div class="lineFooter">
+                <p class="menuList">Преимущества работы с нами</p>
+                <div class="footerBenfitsconteiner">
+                    <div class="footerBenefits">
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Работаем с 2010 года</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Любые способы оплаты.
+                                Выдача закрывающих документов</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Оплачиваете только готовый результат по актам приемки</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Фиксируем цену, срок и гарантию работ в договоре</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Инженерные сети, дизайн-проекты, 3D визуализация</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Комплексный ремонт с единой гарантией</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Начнем работу в день обращения</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">3-х этапный контроль выполняемых работ</p>
+                        </div>
+                    </div>
+                    <div class="footerBenefits">
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Исправим дефекты в т.ч.
+                                3-х лет за наш счет</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Выплатим до 20.000₽
+                                за день просрочки</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Закупим и доставим материал на объект, либо возьмем
+                                на хранение </p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Честная смета, без скрытых платежей</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Бесплатный замер объекта </p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Материалы по оптовым ценам</p>
+                        </div>
+                        <div class="benefitsline">
+                            <p class="benefitsFooterMain"><img src="./assets/img/BenefitsVectorFooter.svg" alt="Done"
+                                    class="vector">Видео наблюдение
+                                за объектом 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#top"><img src="./assets/img/inTopBtm.jpg" alt="Top" class="inTopBtm"></a>
+        </div>
+    </section>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,500;1,600&display=swap');
+    </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/picturefill.js"></script>
+    <script async src="./assets/js/main.js"></script>
+</body>
+
+</html>
